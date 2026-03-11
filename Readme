@@ -1,0 +1,66 @@
+# 🇰🇪 Kenya Economic Indicators Dashboard
+**Streamlit + Plotly data analysis project**  
+Data source: World Bank Open Data | Period: 2000–2023
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the dashboard
+```bash
+streamlit run app.py
+```
+
+### 3. Open in browser
+Streamlit will open automatically at `http://localhost:8501`
+
+---
+
+## 📊 Features
+
+| Tab | Content |
+|-----|---------|
+| 📈 GDP | Dual-axis bar + line chart, year-on-year change, era breakdown |
+| 🔥 Inflation | CPI trend with CBK target band, distribution histogram, donut chart |
+| 👷 Unemployment | Trajectory with 3-year rolling average |
+| 🌍 Trade | Exports vs imports, deficit fill, net trade balance bar chart |
+| 🔗 Correlations | Scatter plots with trendlines, full correlation heatmap |
+| 📊 Statistics | Descriptive stats table, raw data table, CSV export |
+
+**Sidebar controls:**
+- Year range slider (2000–2023)
+- Toggle individual indicator panels
+- COVID-19 period highlight toggle
+
+---
+
+## 📁 Project Structure
+```
+kenya_dashboard/
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Python dependencies
+└── README.md           # This file
+```
+
+---
+
+## 📐 Indicators Covered
+- **NY.GDP.MKTP.CD** — GDP, current USD
+- **NY.GDP.MKTP.KD.ZG** — GDP growth (annual %)
+- **FP.CPI.TOTL.ZG** — Inflation, consumer prices (annual %)
+- **SL.UEM.TOTL.ZS** — Unemployment, total (% of labor force, ILO)
+- **NE.EXP.GNFS.ZS** — Exports of goods and services (% of GDP)
+- **NE.IMP.GNFS.ZS** — Imports of goods and services (% of GDP)
+
+---
+
+## 🛠 Built With
+- [Streamlit](https://streamlit.io) — web app framework
+- [Plotly](https://plotly.com/python/) — interactive charts
+- [Pandas](https://pandas.pydata.org) — data manipulation
+- [SciPy](https://scipy.org) — statistical analysis
